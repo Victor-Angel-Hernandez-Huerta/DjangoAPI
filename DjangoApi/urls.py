@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from api.login.login_view import login_view
 from api.home.home_view import home_views
+from api.boton.boton_view import boton_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login_view, name = "login_vista"),
     path('', home_views, name = "home"),
+    path('boton/', boton_view, name = "boton_vista"),
 ]
